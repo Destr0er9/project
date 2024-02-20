@@ -1,9 +1,9 @@
-a = int(input('Введите число: '))
+number = input('Введите число: ')
+first_number = number[0]
+count = 0
 
-max_digit = max(str(a))
-min_digit = min(str(a))
+for i in range(len(number)):
+    if first_number in number[i]:
+        count += 1
 
-print(f'Максимальное число: {max_digit}, Минимальное число: {min_digit}')
-print(f'Разница в числах: {int(max_digit) - int(min_digit)}')
-print(f'Сумма чисел: {int(max_digit) + int(min_digit)}')
-
+print(count)
